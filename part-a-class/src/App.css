@@ -1,0 +1,192 @@
+#root {
+  min-height: 100svh;
+}
+
+.page {
+  width: min(calc(100% - 32px), 1000px);
+  margin: 0 auto;
+  padding: 32px 0 56px;
+  color: #000000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header, .list-header, .expense, .expense-actions, .total {
+  display: flex;
+  align-items: center;
+}
+
+.app-header, .list-header, .expense, .total {
+  justify-content: space-between;
+}
+
+.app-header {
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(28px, 5vw, 42px);
+  letter-spacing: -1px;
+}
+
+.clock {
+  color: #5865f2;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.card {
+  margin-bottom: 16px;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.card-form {
+  padding: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+}
+
+.expense-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  align-items: end;
+  padding-top: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input, .field select {
+  box-sizing: border-box;
+  min-height: 42px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  font: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+.primary-button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 4px;
+  background: #5865f2;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.error {
+  margin: 14px 0 0;
+  color: #d92d20;
+  font-size: 14px;
+}
+
+.list-header {
+  gap: 16px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  min-height: 34px;
+  min-width: 180px;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  background: #fff;
+  color: gray;
+  font: inherit;
+}
+
+.filters {
+  min-height: 34px;
+  min-width: 150px;
+  padding: 6px 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  background: #fff;
+  color: gray;
+  font: inherit;
+}
+
+.list-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-button {
+  padding: 6px 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.active-filter {
+  background-color: #5865f2;
+  color: #fff;
+}
+
+.expense-list {
+  border-top: 1px solid #c5c5c5;
+}
+
+.expense {
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.meta {
+  margin: 6px 0 0;
+  color: gray;
+  font-size: 13px;
+}
+
+.expense-actions {
+  gap: 16px;
+}
+
+.amount {
+  color: #5865f2;
+  white-space: nowrap;
+}
+
+.delete-button {
+  border: 0;
+  background: transparent;
+  color: red;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.empty {
+  padding: 24px 0;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.total {
+  padding: 16px;
+  font-size: 18px;
+}
